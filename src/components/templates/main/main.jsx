@@ -2,7 +2,7 @@ import HeadingText from "../../atoms/heading/heading"
 
 const Main = () => {
   return (
-    <div>
+    <div className="p-16">
       <HeadingText text={"Seguimiento Pacientes"} remarkText={"Veterinaria"}/>
     </div>
   )
