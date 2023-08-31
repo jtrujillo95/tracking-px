@@ -1,6 +1,6 @@
-const RemarkText = ({ text, remarkableText }) => {
+const RemarkText = ({ text, remarkableText, fontSize = 'font-bold text-5xl' }) => {
 	return (
-		<p className="font-bold text-3xl">{text} <span className="text-purple-900">{remarkableText}</span></p>
+		<p className={fontSize}>{text} <span className="text-purple-900">{remarkableText}</span></p>
 	)
 }
 
