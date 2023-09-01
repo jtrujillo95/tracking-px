@@ -14,7 +14,7 @@ const CreateReservationForm = () => {
   })
 
   const onSubmit = data => {
-    const arrayData = localStorage.getItem('list-px') || []
+    const arrayData = JSON.parse(localStorage.getItem('list-px')) || []
     arrayData.push(data)
     localStorage.setItem('list-px', JSON.stringify(arrayData))
   }
